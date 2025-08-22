@@ -25,9 +25,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold mb-4">{element}</h1>
-      <h1 className="text-4xl font-bold">{obterSaudacao(morador)}</h1>
+    <div id= "principal" className="min-h-screen flex items-center justify-center bg-black">
+      <div id="componente-azul" className= "card-azul">
+        <h1 id="name" className="text-2xl font-bold text-center">{obterSaudacao(null)}</h1>
+      </div>
     </div>
+
   );
 }
